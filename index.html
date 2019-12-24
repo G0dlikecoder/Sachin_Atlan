@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sachin_ODI analysis</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+  </head>
+  <body>
+          <div class="card sachin_profile">
+              		        <img src="
+                          https://i.ytimg.com/vi/paw8zahb45o/maxresdefault.jpg
+                          "  class="background"/>
+              		        <img src="https://sportstar.thehindu.com/cricket/indian/article21134377.ece/ALTERNATES/LANDSCAPE_1200/TENDULKAR5AP" alt="Sachin's photo" class="profile"/>
+                              <div class="sachin_content" style="color: black; " >
+                              <h1>Sachin Tandulkar
+                                <br><small>Cricketer</small></h1>
+                          </div>
+              		</div>
+                  <div class="container-fluid" style="margin-top: -5%;">
+                    <div class="row">
+                      <div class="col-lg-2">
+                      </div>
+                      <a class="card col-lg-2 inbox text-center" href="runs.html" style="text-decoration: none;">
+                        <div class="card-body" >
+                          <p style="font-size: 1.7em;">Runs scored</p>
+                          <p id="demo1" class="card-text" style="font-size: 2em; margin-top: 25%; font-weight: bold;">
+                      </div>
+                      </a>
+                      <div class="card col-lg-2 inbox text-center">
+                        <div class="card-body">
+                          <p style="font-size: 1.7em;">Matches Played</p>
+                            <p id="demo7" class="card-text" style="font-size: 2em; margin-top: 25%; font-weight: bold;">
+                      </div>
+                      </div>
+
+                      <a class="card col-lg-2 inbox text-center" href="Centuries.html" style="text-decoration: none;">
+                        <div class="card-body">
+                          <p style="font-size: 1.7em;">Centuries</p>
+                          <p id="demo4" class="card-text" style="font-size: 2em; margin-top: 25%; font-weight: bold;">
+                        </div>
+                      </a>
+
+                      <a class="card col-lg-2 inbox text-center" href="half_Centuries.html" style="text-decoration: none;">
+                        <div class="card-body">
+                          <p style="font-size: 1.7em;">Half centuries</p>
+                          <p id="demo5" class="card-text" style="font-size: 2em; margin-top: 25%; font-weight: bold;">
+                      </div>
+                    </a>
+                      <div class="col-lg-2">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="card col-lg-4 inbox2 text-center">
+                        <div class="card-body">
+                          <p style="font-size: 1.7em;">Highest score</p>
+                          <p id="demo6" class="card-text" style="font-size: 2em; margin-top: 25%; font-weight: bold;">
+                      </div>
+                      </div>
+                      <div class="col-lg-4 ">
+                      </div>
+                      <div class="card col-lg-4 inbox2 text-center">
+                        <div class="card-body">
+                            <p style="font-size: 1.7em;">Catches taken</p>
+                            <p id="demo3" class="card-text" style="font-size: 2em; margin-top: 25%; font-weight: bold;">
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="margin-bottom: 6%; margin-top: 10%; height: 8vh; ">
+                    <p  style="text-align: center; font-weight: bold; font-size: 3em; font-family: 'Indie Flower', cursive; ">
+                      Made by Nitesh
+                    <br><small>Click on blue font boxes to view more analysis</small></p>
+                  </div>
+
+      <style>
+        body{
+          margin: 0;
+           padding: 0;
+           max-width:100%;
+        }
+        .inbox{
+          margin: 20px;
+          width: 400px;
+          left: 1%;
+          padding: 20px;
+          cursor: pointer;
+        }
+        .inbox2{
+          width: 400px;
+          padding: 20px;
+          cursor: pointer;
+        }
+        .inbox:hover{
+          box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+        }
+        .inbox2:hover{
+          box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+        }
+        @media screen and (max-width: 500px) {
+          .background{
+            width:160%;
+          }
+        }
+        .sachin_profile {
+          font-family: 'Mansalva', cursive;;
+          position: relative;
+          <!-- height: 60vh; -->
+          float: left;
+          overflow: hidden;
+          width: 100%;
+          color: #ffffff;
+          height: 70vh;
+          text-align: center;
+          border:none;
+        }
+        .sachin_profile .background {
+          display:block;
+          width:100%;
+           height: 40vh;
+          object-fit: cover;
+
+        }
+        .sachin_profile .sachin_content {
+          width: 100%;
+          padding: 15px 25px;
+          position: absolute;
+          left: 0;
+          top: 71%;
+        }
+        .sachin_profile .profile {
+          border-radius: 50%;
+          position: absolute;
+          bottom: 31%;
+          left: 50%;
+          width: 168px;
+          height: 168px;
+          max-width: 168px;
+          opacity: 1;
+          box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+          border: 2px solid rgba(255, 255, 255, 1);
+          -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+        }
+
+      </style>
+
+
+
+
+      <script src="JS/index.js"></script>
+      <script src="JS/index2.js"></script>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  </html>

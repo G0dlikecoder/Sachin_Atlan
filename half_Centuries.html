@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<style>
+    body{
+      margin-top: 8vh;
+      margin: 0;
+       padding: 0;
+       max-width:100%;
+    }
+    #btnSearch,
+    #btnClear{
+      display: inline-block;
+      vertical-align: top;
+    }
+    .graphs {
+      margin-left: 10vw;
+    }
+    @media only screen and (max-width: 574px) {
+  .graphs {
+    margin-left: 2vw;
+  }
+  }
+  .footer{
+    margin-bottom: 6%;
+    margin-top: 30%;
+    height: 8vh;
+  }
+  @media only screen and (max-width: 574px) {
+.footer {
+  margin-top: 60%;
+}
+}
+</style>
+
+
+<div class="container-fluid">
+
+      <div >
+        <p style=" font-weight: bold; font-size: 2.9em;
+        margin-top: 20px; padding: 0;
+        text-align: center; font-family: 'Mansalva', cursive;"
+        >Sachin Tendulkar</p><br>
+        <p style=" font-size: 1.9em; margin-top: -50px;
+        text-align: center; font-family: 'Mansalva', cursive;"
+        >(Greatest Cricketer of all the times)</p>
+      </div>
+        <div class="container">
+          <div class="row " style="margin-top: 10px; ">
+            <div class="col-sm-12 text-center ">
+                 <a type="button " class="btn btn-outline-primary" id="one"  style="color: rgb(10, 10, 10); float: left; font-weight: bold; ">Year</a>
+                 <a type="button " class="btn btn-outline-primary " id="two"  style="color: rgb(0, 0, 0);  float: left; font-weight: bold; ">Opposition</a>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="graphs">
+            <div id="chartContainer5"   style="height: 470px; width: 80vw;  position: absolute;"></div>
+            <div id="chartContainer6"   style="height: 470px; width: 80vw;  position: absolute;"></div>
+          </div>
+        </div>
+
+
+        <div  class="footer">
+          <p  style="text-align: center; font-weight: bold; font-size: 3em; font-family: 'Indie Flower', cursive; ">Made by Nitesh</p>
+        </div>
+</div>
+<script>
+document.getElementById("one").addEventListener("click", myFunction1);
+  function myFunction1() {
+    document.getElementById("chartContainer5").style.visibility = "hidden";
+    document.getElementById("chartContainer6").style.visibility = "visible";
+
+
+  }
+  document.getElementById("two").addEventListener("click", myFunction2);
+  function myFunction2() {
+    document.getElementById("chartContainer5").style.visibility = "visible";
+    document.getElementById("chartContainer6").style.visibility = "hidden";
+
+
+  }
+</script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/sachin_stats.js"></script>
+    <script src="./JS/graph_hc.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
